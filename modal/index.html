@@ -19,6 +19,30 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem nemo quod dolor reprehenderit dolores voluptatum a nobis, molestias ducimus placeat esse temporibus tenetur quo atque quis dolore tempora aliquid quidem repudiandae id laborum dolorem inventore velit quaerat? Eius libero vitae nam, minus nemo voluptate temporibus praesentium cum veniam ab cumque, voluptas iusto, distinctio ipsum quas consequuntur blanditiis eveniet nisi aliquid. Voluptas, cupiditate dolorem? Veritatis temporibus mollitia obcaecati quos repellat, minus atque hic cum ipsa officia commodi nobis minima nemo iusto.
         </div>
     </div>
+
+    <button data-modal-target="#modal2">Open modal 2</button>
+    <!-- data-modal-target="#modal2" points to the id of the modal we want to open -->
+    <div class="modal" id="modal2">
+        <div class="modal-header">
+            <div class="title">2nd modal</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            2nd modal body
+        </div>
+    </div>
     <div id="overlay"></div>
 </body>
 </html>
+
+<!-- 
+    Here we have three parts for a modal,
+     - button (to show modal)
+     - overlay (will cover the entire screen)
+     - modal (content)
+    At first the visibilty of modal and overlay is hidden/none
+    On click of button, their visibility is true.
+    When we don't have the modal, overlay does not accept any clicks and vice versa.
+
+    So, basically JS adds and removes classes to achieve the above theory.
+-->
