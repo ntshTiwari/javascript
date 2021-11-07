@@ -4,7 +4,10 @@ const overlay = document.getElementById('overlay')
 
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
+        // button.dataset.modalTarget returns us #modal
         const modal = document.querySelector(button.dataset.modalTarget)
+        // So, document.querySelector(button.dataset.modalTarget) will return us element with id modal.
+        // Thus our item with modal will be passed to openModal() function
         openModal(modal)
     })
 })
